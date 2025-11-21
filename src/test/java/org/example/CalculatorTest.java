@@ -6,7 +6,19 @@ import org.junit.jupiter.api.Test;
 class CalculatorTest {
 
     @Test
-    void multiply() {
+    void add() {
+        Assertions.assertEquals(5, Calculator.add(2, 3));
+        Assertions.assertEquals(0, Calculator.add(-2, 2));
+    }
+
+    @Test
+    void subtract() {
+        Assertions.assertEquals(1, Calculator.subtract(3, 2));
+        Assertions.assertEquals(-4, Calculator.subtract(-2, 2));
+    }
+    
+    @Test
+        void multiply() {
         Assertions.assertEquals(8, Calculator.multiply(2, 4));
         Assertions.assertEquals(-4, Calculator.multiply(-2, 2));
     }
